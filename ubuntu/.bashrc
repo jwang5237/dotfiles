@@ -1,6 +1,3 @@
-# If not running interactively, don't go further
-# [[ "$-" != *i* ]] && return
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -33,3 +30,5 @@ fi
 
 EDITOR=vim
 export EDITOR
+
+unset which
